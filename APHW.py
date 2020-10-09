@@ -86,4 +86,8 @@ def extractHW(hw_zipfile):
     shutil.rmtree(temp_dest)
     return faults
 
-print(extractHW(hw_zipfile))
+def getStudentNames(folder):
+    return os.listdir(folder)
+
+#print(extractHW(hw_zipfile))
+print(getStudentNames('aphw'))
